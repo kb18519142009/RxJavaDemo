@@ -80,13 +80,14 @@
             android:text="创建Observable对象———defer" />
 
         <TextView
+            android:id="@+id/tv_observable_timer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="创建Observable对象———just" />
+            android:text="创建Observable对象———timer" />
 
         <TextView
             android:layout_width="match_parent"
