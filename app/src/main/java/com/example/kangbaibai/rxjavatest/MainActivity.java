@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_observable_defer).setOnClickListener(this);
 
         findViewById(R.id.tv_observable_timer).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_interval).setOnClickListener(this);
     }
 
     @Override
@@ -66,6 +68,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.tv_observable_timer:
+                RxJavaTimer.timerObservable();
+                break;
+
+            case R.id.tv_observable_interval:
                 RxJavaTimer.timerObservable();
                 break;
 
