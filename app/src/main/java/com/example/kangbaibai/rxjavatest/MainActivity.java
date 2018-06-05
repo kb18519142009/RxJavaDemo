@@ -7,7 +7,9 @@ import android.view.View;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaCreate;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaDefer;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaFrom;
+import com.example.kangbaibai.rxjavatest.rx.RxJavaInterval;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaJust;
+import com.example.kangbaibai.rxjavatest.rx.RxJavaRange;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaTimer;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -34,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_observable_timer).setOnClickListener(this);
 
         findViewById(R.id.tv_observable_interval).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_intervalRange).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_range).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_rangeLong).setOnClickListener(this);
     }
 
     @Override
@@ -72,7 +80,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.tv_observable_interval:
-                RxJavaTimer.timerObservable();
+                RxJavaInterval.intervalObservable();
+                break;
+
+            case R.id.tv_observable_intervalRange:
+                RxJavaInterval.intervalRangeObservable();
+                break;
+
+            case R.id.tv_observable_range:
+                RxJavaRange.rangeObservable();
                 break;
 
             default:

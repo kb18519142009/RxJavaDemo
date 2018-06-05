@@ -100,31 +100,34 @@
             android:text="创建Observable对象———interval" />
 
         <TextView
+            android:id="@+id/tv_observable_intervalRange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="创建Observable对象———just" />
+            android:text="创建Observable对象———intervalRange" />
 
         <TextView
+            android:id="@+id/tv_observable_range"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="创建Observable对象———just" />
+            android:text="创建Observable对象———range" />
 
         <TextView
+            android:id="@+id/tv_observable_rangeLong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="创建Observable对象———just" />
+            android:text="创建Observable对象———rangeLong" />
 
         <TextView
             android:layout_width="match_parent"
