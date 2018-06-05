@@ -91,6 +91,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 RxJavaRange.rangeObservable();
                 break;
 
+            case R.id.tv_observable_rangeLong:
+                RxJavaRange.rangeLongObservable();
+                break;
+
             default:
                 break;
         }

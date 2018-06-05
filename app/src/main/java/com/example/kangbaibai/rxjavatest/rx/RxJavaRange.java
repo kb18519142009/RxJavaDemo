@@ -44,4 +44,36 @@ public class RxJavaRange {
                     }
                 });
     }
+
+    /**
+     * rangeLong()
+     * <p>
+     * public static Observable<Long> rangeLong(long start, long count)
+     * <p>
+     * 作用与 range() 一样，只是数据类型为 Long
+     */
+    public static void rangeLongObservable() {
+        Observable.rangeLong(2, 5)
+                .subscribe(new Observer<Long>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+                        Log.e(TAG, "--------------------观察者的onSubscribe--------------------");
+                    }
+
+                    @Override
+                    public void onNext(Long aLong) {
+                        Log.e(TAG, "观察者的onNext: " + aLong);
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+
+                    }
+                });
+    }
 }

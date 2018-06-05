@@ -130,13 +130,14 @@
             android:text="创建Observable对象———rangeLong" />
 
         <TextView
+            android:id="@+id/tv_observable_empty"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="创建Observable对象———just" />
+            android:text="创建Observable对象———empty" />
 
         <TextView
             android:layout_width="match_parent"
