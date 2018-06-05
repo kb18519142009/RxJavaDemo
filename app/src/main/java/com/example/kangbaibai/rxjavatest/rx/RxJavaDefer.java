@@ -33,7 +33,6 @@ public class RxJavaDefer {
         Observer observer = new Observer<Integer>() {
             @Override
             public void onSubscribe(Disposable d) {
-                Log.e(TAG, "--------------------观察者的onSubscribe--------------------");
             }
 
             @Override
@@ -43,12 +42,10 @@ public class RxJavaDefer {
 
             @Override
             public void onError(Throwable e) {
-                Log.e(TAG, "观察者的onError：" + e);
             }
 
             @Override
             public void onComplete() {
-                Log.e(TAG, "观察者的onComplete：");
             }
         };
         observable.subscribe(observer);
