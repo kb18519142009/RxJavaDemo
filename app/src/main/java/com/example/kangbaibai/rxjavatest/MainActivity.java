@@ -8,6 +8,7 @@ import com.example.kangbaibai.rxjavatest.rx.RxJavaCreate;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaDefer;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaFrom;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaJust;
+import com.example.kangbaibai.rxjavatest.rx.RxJavaTimer;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_observable_fromIterable).setOnClickListener(this);
 
         findViewById(R.id.tv_observable_defer).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_timer).setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +63,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.tv_observable_defer:
                 RxJavaDefer.deferObservable();
+                break;
+
+            case R.id.tv_observable_timer:
+                RxJavaTimer.timerObservable();
                 break;
 
             default:
