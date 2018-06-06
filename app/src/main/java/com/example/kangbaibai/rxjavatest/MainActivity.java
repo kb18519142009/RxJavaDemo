@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.example.kangbaibai.rxjavatest.rx.RxJavaCreate;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaDefer;
+import com.example.kangbaibai.rxjavatest.rx.RxJavaEmpty;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaFrom;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaInterval;
 import com.example.kangbaibai.rxjavatest.rx.RxJavaJust;
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_observable_range).setOnClickListener(this);
 
         findViewById(R.id.tv_observable_rangeLong).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_empty).setOnClickListener(this);
     }
 
     @Override
@@ -93,6 +96,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.tv_observable_rangeLong:
                 RxJavaRange.rangeLongObservable();
+                break;
+
+            case R.id.tv_observable_empty:
+                RxJavaEmpty.emptyObservable();
                 break;
 
             default:
