@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_observable_rangeLong).setOnClickListener(this);
 
         findViewById(R.id.tv_observable_empty).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_never).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_error).setOnClickListener(this);
     }
 
     @Override
@@ -100,6 +104,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.tv_observable_empty:
                 RxJavaEmpty.emptyObservable();
+                break;
+
+            case R.id.tv_observable_never:
+                RxJavaEmpty.neverObservable();
+                break;
+
+            case R.id.tv_observable_error:
+                RxJavaEmpty.errorObservable();
                 break;
 
             default:
