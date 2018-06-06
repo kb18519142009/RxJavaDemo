@@ -22,6 +22,7 @@ public class RxJavaBuffer {
      * <p>
      * 从需要发送的事件当中获取一定数量的事件，并将这些事件放到缓冲区当中一并发出。
      * buffer 有两个参数，一个是 count，另一个 skip。count 缓冲区元素的数量，skip 就代表缓冲区满了之后，发送下一次事件序列的时候要跳过多少元素
+     * 每次发送事件，指针都会往后移动一个元素再取值，直到指针移动到没有元素的时候就会停止取值
      */
     public static void bufferObservable() {
         Observable.just(1, 2, 3, 4, 5)

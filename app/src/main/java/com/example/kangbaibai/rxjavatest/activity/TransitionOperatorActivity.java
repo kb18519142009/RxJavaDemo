@@ -6,6 +6,7 @@ import android.view.View;
 
 import com.example.kangbaibai.rxjavatest.R;
 import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaBuffer;
+import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaGroupBy;
 import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaMap;
 
 public class TransitionOperatorActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,12 +17,10 @@ public class TransitionOperatorActivity extends AppCompatActivity implements Vie
         setContentView(R.layout.activity_transition_operator);
 
         findViewById(R.id.tv_observable_map).setOnClickListener(this);
-
         findViewById(R.id.tv_observable_flatMap).setOnClickListener(this);
-
         findViewById(R.id.tv_observable_concatMap).setOnClickListener(this);
-
         findViewById(R.id.tv_observable_buffer).setOnClickListener(this);
+        findViewById(R.id.tv_observable_groupBy).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +40,10 @@ public class TransitionOperatorActivity extends AppCompatActivity implements Vie
 
             case R.id.tv_observable_buffer:
                 RxJavaBuffer.bufferObservable();
+                break;
+
+            case R.id.tv_observable_groupBy:
+                RxJavaGroupBy.groupByObservable();
                 break;
 
             default:
