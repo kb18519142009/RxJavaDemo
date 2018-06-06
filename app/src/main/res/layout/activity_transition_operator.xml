@@ -40,14 +40,14 @@
             android:text="Observable对象转换操作符———concatMap" />
 
         <TextView
-            android:id="@+id/tv_observable_fromCallable"
+            android:id="@+id/tv_observable_buffer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Observable对象转换操作符———fromCallable" />
+            android:text="Observable对象转换操作符———buffer" />
 
         <TextView
             android:id="@+id/tv_observable_fromFuture"

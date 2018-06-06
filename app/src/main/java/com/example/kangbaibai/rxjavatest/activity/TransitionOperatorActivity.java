@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.kangbaibai.rxjavatest.R;
+import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaBuffer;
 import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaMap;
 
 public class TransitionOperatorActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,6 +20,8 @@ public class TransitionOperatorActivity extends AppCompatActivity implements Vie
         findViewById(R.id.tv_observable_flatMap).setOnClickListener(this);
 
         findViewById(R.id.tv_observable_concatMap).setOnClickListener(this);
+
+        findViewById(R.id.tv_observable_buffer).setOnClickListener(this);
     }
 
     @Override
@@ -33,7 +36,11 @@ public class TransitionOperatorActivity extends AppCompatActivity implements Vie
                 break;
 
             case R.id.tv_observable_concatMap:
-                RxJavaMap.flatMapObservable();
+                RxJavaMap.concatMapObservable();
+                break;
+
+            case R.id.tv_observable_buffer:
+                RxJavaBuffer.bufferObservable();
                 break;
 
             default:
