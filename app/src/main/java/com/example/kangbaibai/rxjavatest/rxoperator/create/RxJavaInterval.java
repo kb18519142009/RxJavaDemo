@@ -1,4 +1,4 @@
-package com.example.kangbaibai.rxjavatest.rx;
+package com.example.kangbaibai.rxjavatest.rxoperator.create;
 
 import android.util.Log;
 
@@ -51,14 +51,14 @@ public class RxJavaInterval {
 
     /**
      * intervalRange()
-     *
+     * <p>
      * public static Observable<Long> intervalRange(long start, long count, long initialDelay, long period, TimeUnit unit)
      * public static Observable<Long> intervalRange(long start, long count, long initialDelay, long period, TimeUnit unit, Scheduler scheduler)
-     *
+     * <p>
      * 可以指定发送事件的开始值和数量，其他与 interval() 的功能一样。
      */
     public static void intervalRangeObservable() {
-        Observable.intervalRange(2,5,1,1,TimeUnit.SECONDS)
+        Observable.intervalRange(2, 5, 1, 1, TimeUnit.SECONDS)
                 .subscribe(new Observer<Long>() {
                     @Override
                     public void onSubscribe(Disposable d) {
