@@ -13,6 +13,13 @@ import io.reactivex.disposables.Disposable;
 public class RxJavaEmpty {
     private static final String TAG = "RxJavaEmpty";
 
+    /**
+     * empty()
+     * <p>
+     * public static <T> Observable<T> empty()
+     * <p>
+     * 直接发送 onComplete() 事件
+     */
     public static void emptyObservable() {
         Observable.empty().subscribe(new Observer<Object>() {
             @Override
@@ -37,6 +44,13 @@ public class RxJavaEmpty {
         });
     }
 
+    /**
+     * never()
+     * <p>
+     * public static <T> Observable<T> never()
+     * <p>
+     * 不发送任何事件
+     */
     public static void neverObservable() {
         Observable.never().subscribe(new Observer<Object>() {
             @Override
@@ -61,7 +75,13 @@ public class RxJavaEmpty {
         });
     }
 
-
+    /**
+     * error()
+     * <p>
+     * public static <T> Observable<T> error(final Throwable exception)
+     * <p>
+     * 发送 onError() 事件
+     */
     public static void errorObservable() {
         Observable.error(new NullPointerException()).subscribe(new Observer<Object>() {
             @Override

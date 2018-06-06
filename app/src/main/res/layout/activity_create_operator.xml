@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_observable_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———create" />
+
+        <TextView
+            android:id="@+id/tv_observable_just"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———just" />
+
+        <TextView
+            android:id="@+id/tv_observable_fromArray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———fromArray" />
+
+        <TextView
+            android:id="@+id/tv_observable_fromCallable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———fromCallable" />
+
+        <TextView
+            android:id="@+id/tv_observable_fromFuture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———fromFuture" />
+
+        <TextView
+            android:id="@+id/tv_observable_fromIterable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———fromIterable" />
+
+        <TextView
+            android:id="@+id/tv_observable_defer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———defer" />
+
+        <TextView
+            android:id="@+id/tv_observable_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———timer" />
+
+        <TextView
+            android:id="@+id/tv_observable_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———interval" />
+
+        <TextView
+            android:id="@+id/tv_observable_intervalRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———intervalRange" />
+
+        <TextView
+            android:id="@+id/tv_observable_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———range" />
+
+        <TextView
+            android:id="@+id/tv_observable_rangeLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———rangeLong" />
+
+        <TextView
+            android:id="@+id/tv_observable_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———empty" />
+
+        <TextView
+            android:id="@+id/tv_observable_never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———never" />
+
+        <TextView
+            android:id="@+id/tv_observable_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="创建Observable对象———error" />
+
+    </LinearLayout>
+
+</ScrollView>
