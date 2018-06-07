@@ -8,6 +8,8 @@ import com.example.kangbaibai.rxjavatest.R;
 import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaBuffer;
 import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaGroupBy;
 import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaMap;
+import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaScan;
+import com.example.kangbaibai.rxjavatest.rxoperator.transition.RxJavaWindow;
 
 public class TransitionOperatorActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,6 +23,8 @@ public class TransitionOperatorActivity extends AppCompatActivity implements Vie
         findViewById(R.id.tv_observable_concatMap).setOnClickListener(this);
         findViewById(R.id.tv_observable_buffer).setOnClickListener(this);
         findViewById(R.id.tv_observable_groupBy).setOnClickListener(this);
+        findViewById(R.id.tv_observable_scan).setOnClickListener(this);
+        findViewById(R.id.tv_observable_window).setOnClickListener(this);
     }
 
     @Override
@@ -44,6 +48,14 @@ public class TransitionOperatorActivity extends AppCompatActivity implements Vie
 
             case R.id.tv_observable_groupBy:
                 RxJavaGroupBy.groupByObservable();
+                break;
+
+            case R.id.tv_observable_scan:
+                RxJavaScan.scanObservable();
+                break;
+
+            case R.id.tv_observable_window:
+                RxJavaWindow.windowObservable();
                 break;
 
             default:

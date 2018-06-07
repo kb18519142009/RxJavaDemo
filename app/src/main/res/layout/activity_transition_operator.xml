@@ -60,24 +60,24 @@
             android:text="Observable对象转换操作符———groupBy" />
 
         <TextView
-            android:id="@+id/tv_observable_fromIterable"
+            android:id="@+id/tv_observable_scan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Observable对象转换操作符———fromIterable" />
+            android:text="Observable对象转换操作符———scan" />
 
         <TextView
-            android:id="@+id/tv_observable_"
+            android:id="@+id/tv_observable_window"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:background="@drawable/shape_gray_btn"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Observable对象转换操作符———fromIterable" />
+            android:text="Observable对象转换操作符———window" />
 
     </LinearLayout>
 

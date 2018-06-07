@@ -34,43 +34,43 @@ public class RxJavaGroupBy {
                 .subscribe(new Observer<GroupedObservable<Integer, Integer>>() {
                     @Override
                     public void onSubscribe(Disposable d) {
-                        Log.e(TAG, "--------------------观察者的onSubscribe--------------------");
+                        Log.e(TAG, "--------------------onSubscribe--------------------");
                     }
 
                     @Override
                     public void onNext(final GroupedObservable<Integer, Integer> integerIntegerGroupedObservable) {
-                        Log.e(TAG, "观察者的onNext--------------------");
+                        Log.e(TAG, "onNext--------------------");
                         integerIntegerGroupedObservable.subscribe(new Observer<Integer>() {
                             @Override
                             public void onSubscribe(Disposable d) {
-                                Log.e(TAG, "--------------------GroupedObservable观察者的onSubscribe--------------------");
+                                Log.e(TAG, "--------------------GroupedObservable-->onSubscribe--------------------");
                             }
 
                             @Override
                             public void onNext(Integer integer) {
-                                Log.e(TAG, "GroupedObservable观察者的onNext groupName: " + integerIntegerGroupedObservable.getKey() + " --> value: " + integer);
+                                Log.e(TAG, "GroupedObservable-->onNext groupName: " + integerIntegerGroupedObservable.getKey() + " --> value: " + integer);
                             }
 
                             @Override
                             public void onError(Throwable e) {
-                                Log.e(TAG, "GroupedObservable观察者的onError--------------------" + e.toString());
+                                Log.e(TAG, "GroupedObservable-->onError--------------------" + e.toString());
                             }
 
                             @Override
                             public void onComplete() {
-                                Log.e(TAG, "GroupedObservable观察者的onComplete--------------------");
+                                Log.e(TAG, "GroupedObservable-->onComplete--------------------");
                             }
                         });
                     }
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.e(TAG, "观察者的onError--------------------" + e.toString());
+                        Log.e(TAG, "onError--------------------" + e.toString());
                     }
 
                     @Override
                     public void onComplete() {
-                        Log.e(TAG, "观察者的onComplete--------------------");
+                        Log.e(TAG, "onComplete--------------------");
                     }
                 });
     }
