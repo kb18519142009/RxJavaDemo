@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.CreateOperatorActivity" />
-        <activity android:name=".activity.TransitionOperatorActivity"></activity>
+        <activity android:name=".activity.TransitionOperatorActivity" />
+        <activity android:name=".activity.CombinationActivity"></activity>
     </application>
 
 </manifest>

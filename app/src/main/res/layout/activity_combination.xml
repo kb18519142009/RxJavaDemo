@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_observable_concat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———concat" />
+
+        <TextView
+            android:id="@+id/tv_observable_concatArray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———concatArray" />
+
+        <TextView
+            android:id="@+id/tv_observable_merge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———merge" />
+
+        <TextView
+            android:id="@+id/tv_observable_concatArrayDelayError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———concatArrayDelayError" />
+
+        <TextView
+            android:id="@+id/tv_observable_mergeArrayDelayError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———mergeArrayDelayError" />
+
+        <TextView
+            android:id="@+id/tv_observable_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———zip" />
+
+        <TextView
+            android:id="@+id/tv_observable_combineLatest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———combineLatest" />
+
+        <TextView
+            android:id="@+id/tv_observable_reduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———reduce" />
+
+        <TextView
+            android:id="@+id/tv_observable_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———collect" />
+
+        <TextView
+            android:id="@+id/tv_observable_startWith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———startWith" />
+
+        <TextView
+            android:id="@+id/tv_observable_startWithArray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———startWithArray" />
+
+        <TextView
+            android:id="@+id/tv_observable_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象组合操作符———count" />
+
+    </LinearLayout>
+
+</ScrollView>
