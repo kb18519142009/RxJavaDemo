@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.kangbaibai.rxjavatest.R;
+import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaCollect;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaCombineLatest;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaConcat;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaMerge;
@@ -68,7 +69,7 @@ public class CombinationActivity extends AppCompatActivity implements View.OnCli
                 break;
 
             case R.id.tv_observable_collect:
-                RxJavaConcat.concatArrayObservable();
+                RxJavaCollect.collectObservable();
                 break;
 
             case R.id.tv_observable_startWith:
