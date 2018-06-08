@@ -40,6 +40,16 @@
             android:padding="15dp"
             android:text="组合操作符" />
 
+        <TextView
+            android:id="@+id/tv_function_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="功能操作符" />
+
     </LinearLayout>
 
 </ScrollView>

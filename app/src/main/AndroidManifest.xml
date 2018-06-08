@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activity.CreateOperatorActivity" />
         <activity android:name=".activity.TransitionOperatorActivity" />
-        <activity android:name=".activity.CombinationActivity"></activity>
+        <activity android:name=".activity.CombinationActivity" />
+        <activity android:name=".activity.FunctionActivity"></activity>
     </application>
 
 </manifest>

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_create_operator).setOnClickListener(this);
         findViewById(R.id.tv_transition_operator).setOnClickListener(this);
         findViewById(R.id.tv_combination_operator).setOnClickListener(this);
+        findViewById(R.id.tv_function_operator).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +33,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.tv_combination_operator:
                 startActivity(new Intent(this, CombinationActivity.class));
+                break;
+
+            case R.id.tv_function_operator:
+                startActivity(new Intent(this, FunctionActivity.class));
                 break;
 
             default:

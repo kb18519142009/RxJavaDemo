@@ -8,8 +8,10 @@ import com.example.kangbaibai.rxjavatest.R;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaCollect;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaCombineLatest;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaConcat;
+import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaCount;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaMerge;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaReduce;
+import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaStartWith;
 import com.example.kangbaibai.rxjavatest.rxoperator.combination.RxJavaZip;
 
 public class CombinationActivity extends AppCompatActivity implements View.OnClickListener {
@@ -73,15 +75,15 @@ public class CombinationActivity extends AppCompatActivity implements View.OnCli
                 break;
 
             case R.id.tv_observable_startWith:
-                RxJavaConcat.concatArrayObservable();
+                RxJavaStartWith.startWithObservable();
                 break;
 
             case R.id.tv_observable_startWithArray:
-                RxJavaConcat.concatArrayObservable();
+                RxJavaStartWith.startWithArrayObservable();
                 break;
 
             case R.id.tv_observable_count:
-                RxJavaConcat.concatArrayObservable();
+                RxJavaCount.countObservable();
                 break;
 
             default:

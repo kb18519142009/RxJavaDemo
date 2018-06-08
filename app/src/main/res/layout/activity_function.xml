@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_observable_delay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———delay" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnEach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnEach" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnNext" />
+
+        <TextView
+            android:id="@+id/tv_observable_doAfterNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doAfterNext" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnComplete" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnError" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnSubscribe" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnDispose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnDispose" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnLifecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnLifecycle" />
+
+        <TextView
+            android:id="@+id/tv_observable_doOnTerminate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doOnTerminate" />
+
+        <TextView
+            android:id="@+id/tv_observable_doAfterTerminate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doAfterTerminate" />
+
+        <TextView
+            android:id="@+id/tv_observable_doFinally"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_gray_btn"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Observable对象功能操作符———doFinally" />
+
+    </LinearLayout>
+
+</ScrollView>
