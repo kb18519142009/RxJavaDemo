@@ -36,7 +36,7 @@ public class RxJavaCreate {
         Observable observable = Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(ObservableEmitter<Integer> emitter) throws Exception {
-                Log.e(TAG, "--------------------被观察者的subscribe--------------------");
+                Log.e(TAG, "--------------------subscribe--------------------");
                 emitter.onNext(1);
                 emitter.onNext(2);
                 emitter.onNext(3);
@@ -49,22 +49,22 @@ public class RxJavaCreate {
         Observer observer = new Observer<Integer>() {
             @Override
             public void onSubscribe(Disposable d) {
-                Log.e(TAG, "--------------------观察者的onSubscribe--------------------");
+                Log.e(TAG, "--------------------onSubscribe--------------------");
             }
 
             @Override
             public void onNext(Integer integer) {
-                Log.e(TAG, "观察者的onNext: " + integer);
+                Log.e(TAG, "onNext: " + integer);
             }
 
             @Override
             public void onError(Throwable e) {
-                Log.e(TAG, "观察者的onError: " + e);
+                Log.e(TAG, "onError: " + e);
             }
 
             @Override
             public void onComplete() {
-                Log.e(TAG, "观察者的onComplete");
+                Log.e(TAG, "onComplete");
             }
         };
 
@@ -79,7 +79,7 @@ public class RxJavaCreate {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(ObservableEmitter<Integer> emitter) throws Exception {
-                Log.e(TAG, "--------------------被观察者的subscribe--------------------");
+                Log.e(TAG, "--------------------subscribe--------------------");
                 emitter.onNext(1);
                 emitter.onNext(2);
                 emitter.onNext(3);
@@ -90,22 +90,22 @@ public class RxJavaCreate {
                 .subscribe(new Observer<Integer>() {
                     @Override
                     public void onSubscribe(Disposable d) {
-                        Log.e(TAG, "--------------------观察者的onSubscribe--------------------");
+                        Log.e(TAG, "--------------------onSubscribe--------------------");
                     }
 
                     @Override
                     public void onNext(Integer integer) {
-                        Log.e(TAG, "观察者的onNext: " + integer);
+                        Log.e(TAG, "onNext: " + integer);
                     }
 
                     @Override
                     public void onError(Throwable e) {
-                        Log.e(TAG, "观察者的onError: " + e);
+                        Log.e(TAG, "onError: " + e);
                     }
 
                     @Override
                     public void onComplete() {
-                        Log.e(TAG, "观察者的onComplete");
+                        Log.e(TAG, "onComplete");
                     }
                 });
     }
